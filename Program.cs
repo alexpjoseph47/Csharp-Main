@@ -9,6 +9,7 @@ class Program
             Console.WriteLine("\nMenu:");
             Console.WriteLine("1. Reverse a string");
             Console.WriteLine("2. Print String Line by Line");
+            Console.WriteLine("3. Character count string");
             Console.WriteLine("0. Exit");
             Console.Write("Choose an option: ");
 
@@ -27,6 +28,9 @@ class Program
                     string input2 = Console.ReadLine() ?? string.Empty;
                     Console.WriteLine("******************************************************");
                     StringFunctions.PrintLineByLine(input2);
+                    break;
+                case "3":
+                    StringFunctions.stringcount();
                     break;
                 case "0":
                     return;
