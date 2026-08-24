@@ -8,6 +8,7 @@ class Program
         {
             Console.WriteLine("\nMenu:");
             Console.WriteLine("1. Reverse a string");
+            Console.WriteLine("2. Print String Line by Line");
             Console.WriteLine("0. Exit");
             Console.Write("Choose an option: ");
 
@@ -21,7 +22,12 @@ class Program
                     Console.WriteLine("******************************************************");
                     Console.WriteLine($"Reversed string: {StringFunctions.Reverse(input)}");
                     break;
-
+                case "2":
+                    Console.Write("Enter a string: ");
+                    string input2 = Console.ReadLine() ?? string.Empty;
+                    Console.WriteLine("******************************************************");
+                    StringFunctions.PrintLineByLine(input2);
+                    break;
                 case "0":
                     return;
 
