@@ -13,4 +13,29 @@ public static class StringFunctions
 			Console.WriteLine(c);
 		}
 	}
+	public static void stringcount()
+	{
+		Console.Write("Enter a string: ");
+		string input = Console.ReadLine() ?? string.Empty;
+		Dictionary<char, int> count = new Dictionary<char, int>();
+		int s = input.Length;
+		for(int i = 0; i < s; ++i)
+		{
+			char c=input[i];
+			if (count.ContainsKey(c))
+			{
+				count[c]++;
+			}
+			else
+			{
+				count.Add(c,1);
+			}
+			
+		}
+		foreach(var item in count){
+				
+				Console.WriteLine(item.Key +" : "+ item.Value);
+			}
+		
+	}
 }
