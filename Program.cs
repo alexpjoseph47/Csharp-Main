@@ -11,6 +11,7 @@ class Program
             Console.WriteLine("2. Print String Line by Line");
             Console.WriteLine("3. Character count string");
             Console.WriteLine("5. Character count string");
+            Console.WriteLine("4. Sort Array");
             Console.WriteLine("0. Exit");
             Console.Write("Choose an option: ");
 
