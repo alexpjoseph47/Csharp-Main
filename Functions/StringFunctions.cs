@@ -6,4 +6,11 @@ public static class StringFunctions
 		Array.Reverse(characters);
 		return new string(characters);
 	}
+	public static void PrintLineByLine(string input)
+	{
+		foreach (char c in input)
+		{
+			Console.WriteLine(c);
+		}
+	}
 }
